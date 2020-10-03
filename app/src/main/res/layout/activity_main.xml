@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <TextView
+        android:id="@+id/txtWallets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monero Wallets"
+        android:textSize="25sp"
+        android:textColor="#352F2F"
+       android:layout_marginTop="8dp"
+       android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change"
+        android:textSize="20sp"
+        android:textColor="#CCC7C7"
+        android:layout_marginTop="9dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/imgChange"
+        />
+
+    <ImageButton
+        android:id="@+id/imgChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/down_change"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardOne"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintLeft_toLeftOf="parent"
+   app:layout_constraintTop_toBottomOf="@id/txtWallets">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtDolores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mucho Dolores"
+            android:textColor="#D3CECE"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <TextView
+            android:id="@+id/txtBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XMR Balance"
+            android:textSize="25sp"
+            android:textColor="#28ACE8"
+            android:layout_marginTop="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtDolores" />
+        <TextView
+            android:id="@+id/txtNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24.4565"
+            android:textSize="60sp"
+            android:textColor="#352F2F"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtBalance" />
+        <TextView
+            android:id="@+id/txtUsd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4800.24 USD"
+            android:textSize="25sp"
+            android:textColor="#D3CECE"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtNumber" />
+
+        <ImageButton
+            android:id="@+id/imgSync"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/sync"
+            app:layout_constraintHorizontal_bias="0.4"
+           android:layout_marginBottom="20dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtUsd" />
+
+        <Button
+
+            android:id="@+id/btnSync"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="SYNC ROOM"
+            android:textSize="15sp"
+            android:textColor="#D3CECE"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background"
+            app:layout_constraintVertical_bias="0.9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtUsd"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTwo"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardOne"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageButton
+                android:id="@+id/imgSend"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/send"
+                android:background="@drawable/background_send"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <TextView
+                android:id="@+id/txtSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:textSize="20sp"
+                android:textColor="#403636"
+                android:layout_margin="10dp"
+                app:layout_constraintLeft_toRightOf="@id/imgSend"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardThree"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/cardTwo"
+        app:layout_constraintTop_toBottomOf="@id/cardOne"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageButton
+                android:id="@+id/imgReceive"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/down"
+                android:background="@drawable/background_receive"
+                android:layout_margin="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <TextView
+                android:id="@+id/txtReceive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receive"
+                android:textSize="20sp"
+                android:textColor="#403636"
+                android:layout_margin="10dp"
+                app:layout_constraintLeft_toRightOf="@id/imgReceive"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today"
+        android:textSize="25sp"
+        android:textColor="#D3CECE"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardTwo" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtToday"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageButton
+                android:id="@+id/imgReceived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/received"
+                android:layout_marginTop="11dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/background_received"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <TextView
+                android:id="@+id/txtReceived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Received"
+                android:textSize="20sp"
+                android:textColor="#403636"
+                android:layout_margin="10dp"
+                app:layout_constraintLeft_toRightOf="@id/imgReceived"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <TextView
+                android:id="@+id/txtOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.4545 XMR"
+                android:textSize="15sp"
+                android:textColor="#A3A0A0"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintLeft_toRightOf="@id/imgReceived"
+                app:layout_constraintTop_toBottomOf="@id/txtReceived" />
+            <TextView
+                android:id="@+id/txtTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.4545 XMR"
+                android:textSize="17sp"
+                android:textColor="#554747"
+                android:layout_marginTop="11dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+            <TextView
+                android:id="@+id/txtThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="424USD"
+                android:textSize="15sp"
+                android:textColor="#A3A0A0"
+               app:layout_constraintTop_toBottomOf="@id/txtTwo"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+
+            <ImageButton
+                android:id="@+id/imgSentOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/background_sent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgReceived"
+                />
+            <TextView
+                android:id="@+id/txtSentOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sent"
+                android:textSize="20sp"
+                android:textColor="#403636"
+                android:layout_margin="10dp"
+                app:layout_constraintLeft_toRightOf="@id/imgSentOne"
+                app:layout_constraintTop_toBottomOf="@+id/txtOne"
+                />
+            <TextView
+                android:id="@+id/txtSentTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.4545 XMR"
+                android:textSize="15sp"
+                android:textColor="#A3A0A0"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintLeft_toRightOf="@id/imgSentOne"
+                app:layout_constraintTop_toBottomOf="@id/txtSentOne" />
+            <TextView
+                android:id="@+id/txtSentThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.4545 XMR"
+                android:textSize="17sp"
+                android:textColor="#554747"
+                android:layout_marginTop="11dp"
+                app:layout_constraintTop_toBottomOf="@id/txtThree"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+            <TextView
+                android:id="@+id/txtSentFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="424USD"
+                android:textSize="15sp"
+                android:textColor="#A3A0A0"
+                app:layout_constraintTop_toBottomOf="@id/txtSentThree"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+
+            <ImageButton
+                android:id="@+id/imgSentTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/background_sent"
+                app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/imgSentOne"
+                />
+            <TextView
+                android:id="@+id/txtSOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sent"
+                android:textSize="20sp"
+                android:textColor="#403636"
+                android:layout_margin="10dp"
+                app:layout_constraintLeft_toRightOf="@id/imgSentTwo"
+                app:layout_constraintTop_toBottomOf="@+id/txtSentOne"
+                />
+            <TextView
+                android:id="@+id/txtSTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.4545 XMR"
+                android:textSize="15sp"
+                android:textColor="#A3A0A0"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintLeft_toRightOf="@id/imgSentTwo"
+                app:layout_constraintTop_toBottomOf="@id/txtSOne" />
+            <TextView
+                android:id="@+id/txtSThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.4545 XMR"
+                android:textSize="17sp"
+                android:textColor="#554747"
+                android:layout_marginTop="11dp"
+                app:layout_constraintTop_toBottomOf="@id/txtSentFour"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+            <TextView
+                android:id="@+id/txtSFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="424USD"
+                android:textSize="15sp"
+                android:textColor="#A3A0A0"
+                app:layout_constraintTop_toBottomOf="@id/txtSThree"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/imgSentThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/background_sent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgSentTwo"
+                />
+            <TextView
+                android:id="@+id/txtFOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sent"
+                android:textSize="20sp"
+                android:textColor="#403636"
+                android:layout_margin="10dp"
+                app:layout_constraintLeft_toRightOf="@id/imgSentThree"
+                app:layout_constraintTop_toBottomOf="@+id/txtSTwo"
+                />
+            <TextView
+                android:id="@+id/txtFTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.4545 XMR"
+                android:textSize="15sp"
+                android:textColor="#A3A0A0"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintLeft_toRightOf="@id/imgSentThree"
+                app:layout_constraintTop_toBottomOf="@id/txtFOne" />
+            <TextView
+                android:id="@+id/txtFThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.4545 XMR"
+                android:textSize="17sp"
+                android:textColor="#554747"
+                android:layout_marginTop="11dp"
+                app:layout_constraintTop_toBottomOf="@id/txtSFour"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+            <TextView
+                android:id="@+id/txtFFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="424USD"
+                android:textSize="15sp"
+                android:textColor="#A3A0A0"
+                app:layout_constraintTop_toBottomOf="@id/txtFThree"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+ </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
